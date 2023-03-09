@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click Here](https://github.com/chayansurana3/P6-Tip-Calculator-App.git)
-- Live Site URL: [Click Here](https://your-live-site-url.com)
+- Live Site URL: [Click Here](https://chayansurana3.github.io/P6-Tip-Calculator-App/)
 
 ### Built with
 
