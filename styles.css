@@ -1,0 +1,136 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono";
+}
+
+h4 {
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 15px;
+    margin: 5% 50% 0% 45%;
+}
+
+h5 {
+    font-size: small;
+    color: #fff;
+    display: inline-block;
+}
+
+h6 {
+    margin: 3%;
+    color: hsl(185, 22%, 45%);
+}
+
+.line2 {
+    margin-top: 0%;
+}
+
+.calculator {
+    display: flex;
+    margin: 4% 15% 0% 20%;
+    background-color: #fff;
+    border-radius: 2.5%;
+    z-index: 1;
+    width: 60%;
+    padding: 0.9%;
+}
+
+.left-box {
+    float: left;
+    background-color: #fff;
+    width: 50%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.left-input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    margin-bottom: 5px;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    width: 80%;
+}
+
+.left-input:focus {
+    outline: none !important;
+    border: 1px solid aquamarine;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#custom {
+    display: inline-block;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    width: 25%;
+    height: 11%;
+    text-align: center;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.btn {
+    width: 80px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+}
+
+.btn-selected {
+    background-color: hsl(166, 61%, 39%);
+}
+
+.custom:focus {
+    background-color: hsl(161, 28%, 62%);
+    color: #fff;
+}
+
+.right-box {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: hsl(183, 100%, 15%);
+    padding: 2.5%;
+    border-radius: 5%;
+}
+
+.right-input {
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    outline: none;
+    color: hsl(161, 42%, 58%);
+    text-align: right;
+    height: 30px;
+    font-size: xx-large;
+}
+
+.btn-lg {
+    background-color: hsl(161, 42%, 58%);
+    width: 100%;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    h4 {
+        margin: 5% 30% 5% 40%;
+    }
+
+    .calculator {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .left-box {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .right-box {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+    }
+}
