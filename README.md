@@ -1,7 +1,6 @@
 # Tip Calculator App Solution
 
-This is a solution to the [Tip calculator app challenge on Frontend Mentor]
-(https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). 
+This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). 
 
 ## Table of contents
 
@@ -25,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![ScreenShot](./Screenshot1.png)
+![ScreenShot](./Screenshot2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click Here](https://github.com/chayansurana3/P6-Tip-Calculator-App.git)
+- Live Site URL: [Click Here](https://your-live-site-url.com)
 
 ### Built with
 
