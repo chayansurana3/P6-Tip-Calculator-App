@@ -34,7 +34,7 @@ h6 {
     padding: 0.9%;
 }
 
-.left-box {
+.input-div {
     float: left;
     background-color: #fff;
     width: 50%;
@@ -42,7 +42,7 @@ h6 {
     box-sizing: border-box;
 }
 
-.left-input {
+.input {
     background-color: hsl(189, 41%, 97%);
     border: none;
     margin-bottom: 5px;
@@ -51,7 +51,7 @@ h6 {
     width: 80%;
 }
 
-.left-input:focus {
+.input:focus {
     outline: none !important;
     border: 1px solid aquamarine;
     box-shadow: 0 0 10px #719ECE;
@@ -85,7 +85,7 @@ h6 {
     color: #fff;
 }
 
-.right-box {
+.result-div {
     float: right;
     width: 50%;
     box-sizing: border-box;
@@ -94,7 +94,7 @@ h6 {
     border-radius: 5%;
 }
 
-.right-input {
+.result-display {
     width: 50%;
     background-color: hsl(183, 100%, 15%);
     border: none;
@@ -116,19 +116,7 @@ h6 {
         margin: 5% 30% 5% 40%;
     }
 
-    .calculator {
-        display: inline-block;
-        width: 100%;
-        margin-left: 0%;
-    }
-
-    .left-box {
-        display: inline-block;
-        width: 100%;
-        margin-left: 0%;
-    }
-
-    .right-box {
+    .calculator, .input-div, .result-div {
         display: inline-block;
         width: 100%;
         margin-left: 0%;

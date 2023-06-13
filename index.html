@@ -17,36 +17,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <div class="top-heading">
-    <h4 class="line1">SPLI</h4>
-    <h4 class="line2">TTER</h4>
-  </div>
-
   <main>
+    <h4 class="line1">SPLI<br>TTER</h4>
+
     <div class="calculator">
       
-      <div class="left-box">
+      <div class="input-div">
         <h6>Bill</h6>
         <span class="text-addon"><i class="fa-solid fa-dollar-sign"></i></span>
-        <input type="text" class="left-input" id="amount">
+        <input type="text" class="input" id="amount">
         <h6>Select Tip %</h6>
         <button type="button" class="btn btn-primary tip">5%</button>
         <button type="button" class="btn btn-primary tip">10%</button>
         <button type="button" class="btn btn-primary tip">15%</button>
         <button type="button" class="btn btn-primary tip">25%</button>
         <button type="button" class="btn btn-primary tip">50%</button>
-        <input type="text" class="left-input" id="custom" placeholder="Custom">
+        <input type="text" class="input" id="custom" placeholder="Custom">
         <h6>Number of People</h6>
         <span class="people-addon"><i class="fa-solid fa-person"></i></span>
-        <input type="text" class="left-input" id="people">
+        <input type="text" class="input" id="people">
       </div>
 
-      <div class="right-box">
+      <div class="result-div">
         <h5>Tip Amount / person</h5>
-        <input type="text" id="tipPerPerson" class="right-input" readonly placeholder="$0.00"><br><br><br>
+        <input type="text" id="tipPerPerson" class="result-display" readonly placeholder="$0.00"><br><br><br>
         <h5>Total / person</h5>
-        <input type="text" id="totalPerPerson" class="right-input" style="margin-left: 40px;" readonly placeholder="$0.00"><br><br><br>
+        <input type="text" id="totalPerPerson" class="result-display" style="margin-left: 40px;" readonly placeholder="$0.00"><br><br><br>
         <button type="button" class="btn btn-primary btn-lg" id="reset">Reset</button>
       </div>
 
