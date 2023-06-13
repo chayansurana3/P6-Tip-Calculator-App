@@ -1,20 +1,20 @@
-let bill_amount = document.getElementById("amount");
-let humans = document.getElementById("people");
-let tip_buttons = Array.from(document.getElementsByClassName("tip"));
-let reset_button = document.getElementById("reset");
-let custom_tip_button = document.getElementById("custom");
+const bill_amount = document.getElementById("amount");
+const humans = document.getElementById("people");
+const tip_buttons = Array.from(document.getElementsByClassName("tip"));
+const reset_button = document.getElementById("reset");
+const custom_tip_button = document.getElementById("custom");
+const tipDisplay = document.getElementById("tipPerPerson");
+const totalDisplay = document.getElementById("totalPerPerson");
 let tip_percentage, tip_person, total_bill_person;
-let bill_amountFilled = false;
-let humansFilled = false;
-let buttonClicked = false;
+let bill_amountFilled = false, humansFilled = false, buttonClicked = false;
 
 tip_buttons.forEach(function (button) {
     button.addEventListener("click", function (event) {
-      tip_buttons.forEach(function (otherbtns){
-          otherbtns.classList.remove("btn-selected");
+      tip_buttons.forEach(function (buttonsOtherthanCurrent){
+          buttonsOtherthanCurrent.classList.remove("btn-selected");
       })
       button.classList.add("btn-selected");
-      tip_percentage = parseFloat(button.innerHTML);
+      tip_percentage = parseFloat(button.innerText);
       buttonClicked = true;
       calculateTip();
   });
@@ -33,8 +33,8 @@ function calculateTip() {
   if (bill_amountFilled && humansFilled && buttonClicked) {
     tip_person = (parseFloat(bill_amount.value) * (0.01 * parseFloat(tip_percentage))) / parseFloat(humans.value);
     total_bill_person = parseFloat(bill_amount.value) / parseFloat(humans.value) + tip_person;
-    document.getElementById("tipPerPerson").value = tip_person.toFixed(2);
-    document.getElementById("totalPerPerson").value = total_bill_person.toFixed(2);
+    tipDisplay.value = tip_person.toFixed(2);
+    totalDisplay.value = total_bill_person.toFixed(2);
   }
 }
 
@@ -58,8 +58,4 @@ humans.addEventListener("input", function (event) {
 
 reset_button.addEventListener("click", function(){
     location.reload();
-});
-
-document.addEventListener("click", function(event) {
-    event.preventDefault();
 });
